@@ -4,10 +4,144 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #151515;
+  margin: 0;
+}
+
+a {
+  color: inherit;
 }
 
 .container {
-  width: 1360px;
+  max-width: 1390px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1920px;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  z-index: 6;
+}
+
+.rutube {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 576px) {
+  .rutube {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.rutube img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 576px) {
+  .rutube img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.rulink {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .rulink {
+    display: block;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #0d0d0d;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+.burger__menu {
+  width: 33px;
+  position: relative;
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .burger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.burger__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 85px;
+  gap: 40px;
+  font-weight: 400;
+  z-index: 5;
+  overflow: none;
+}
+
+.hero {
+  height: 1500px;
+  background-color: #12f;
 }
 /*# sourceMappingURL=style.css.map */
