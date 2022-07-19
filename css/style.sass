@@ -1,3 +1,7 @@
+// VARS
+
+$pink: #f41240
+
 // USER STYLES
 
 body
@@ -26,9 +30,53 @@ a
 
 // HEADER
 
+.header
+  position: fixed
+  width: 100%
+  background: #fff
+  // .header__nav
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0
+
+.container
+
+.burger
+  // .burger__menu
+  &__menu
+
+
 .logo
   position: relative
   z-index: 6
+  transition: .4s all
+  &:hover
+    svg g path
+        transition: .4s all
+        fill: $pink
+
+.nav
+  display: flex
+  gap: 30px
+  font-weight: 500
+  line-height: 24px
+  letter-spacing: 0.02em
+  color: #0d0d0d
+  @media (max-width : 768px)
+    display: none
+  // .nav__link
+  &__link
+    transition: .4s all
+    &:hover
+      color: $pink
+
+
+.rulink
+  display: none
+  @media (max-width : 768px)
+    display: block
 
 .rutube
   width: 50px
@@ -43,32 +91,6 @@ a
       width: 40px
       height: 40px
 
-.rulink
-  display: none
-  @media (max-width : 768px)
-    display: block
-
-.header
-  position: fixed
-  width: 100%
-  // z-index: 10
-  background: #fff
-
-.header__nav
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: 20px 0
-
-.nav
-  display: flex
-  gap: 30px
-  font-weight: 500
-  line-height: 24px
-  letter-spacing: 0.02em
-  color: #0d0d0d
-  @media (max-width : 768px)
-    display: none
 
 .burger__menu
   width: 33px
@@ -78,7 +100,6 @@ a
   cursor: pointer
   @media (max-width : 768px)
     display: flex
-    // margin: 65px 0 -106px auto
 
 .burger__active
   display: flex
@@ -158,6 +179,9 @@ a
     display: flex
     align-items: center
     gap: 12px
+    transition: .4s all
+    &:hover
+      color: #dc0000
     img
       width: 20px
     @media (max-width : 375px)
@@ -170,7 +194,11 @@ a
     margin: -60px auto 0
     padding-bottom: 90px
     width: 73px
-    img
+    svg
+      &:hover
+        path
+          stroke-width: 5
+      transition: .4s all
       @media (max-width : 375px)
         width: 40px
     @media (max-width : 768px)

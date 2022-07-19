@@ -25,9 +25,72 @@ a {
   overflow: hidden;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
 .logo {
   position: relative;
   z-index: 6;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.logo:hover svg g path {
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  fill: #f41240;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #0d0d0d;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav__link {
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.nav__link:hover {
+  color: #f41240;
+}
+
+.rulink {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .rulink {
+    display: block;
+  }
 }
 
 .rutube {
@@ -51,52 +114,6 @@ a {
   .rutube img {
     width: 40px;
     height: 40px;
-  }
-}
-
-.rulink {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .rulink {
-    display: block;
-  }
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  background: #fff;
-}
-
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #0d0d0d;
-}
-
-@media (max-width: 768px) {
-  .nav {
-    display: none;
   }
 }
 
@@ -241,6 +258,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.hero__mail:hover {
+  color: #dc0000;
 }
 
 .hero__mail img {
@@ -266,8 +289,17 @@ a {
   width: 73px;
 }
 
+.hero__arrow svg {
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.hero__arrow svg:hover path {
+  stroke-width: 5;
+}
+
 @media (max-width: 375px) {
-  .hero__arrow img {
+  .hero__arrow svg {
     width: 40px;
   }
 }
