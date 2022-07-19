@@ -101,14 +101,83 @@ a
 // HERO
 
 .hero
-  height: 1500px
-  background-color: #12f
-
-
-
-
-
-
+  color: #fff
+  background-image: url(../images/hero/hero-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover //contain
+  background-position: top
+  padding-top: 90px
+  // .hero__title
+  &__title
+    font-weight: 600
+    font-size: 60px
+    line-height: 90px
+    text-align: center
+    max-width: 1130px
+    margin: 0 auto
+    margin-top: 160px
+    margin-bottom: 200px
+    @media (max-width : 768px)
+      font-size: 46px
+      line-height: 60px
+      margin-top: 130px
+      margin-bottom: 120px
+    @media (max-width : 576px)
+      font-size: 32px
+      line-height: 40px
+      margin-top: 70px
+      margin-bottom: 70px
+    @media (max-width : 375px)
+      font-size: 25px
+      line-height: 32px
+      margin-top: 56px
+      margin-bottom: 53px
+  // .hero__links
+  &__links
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width : 768px)
+      flex-direction: column
+    @media (max-width : 375px)
+      gap: 8px
+  // .hero__number
+  &__number
+    font-weight: 500
+    font-size: 33px
+    line-height: 150%
+    span
+      color: #929292
+    @media (max-width : 375px)
+      font-size: 19px
+  // .hero__mail
+  &__mail
+    font-weight: 500
+    font-size: 18px
+    line-height: 150%
+    display: flex
+    align-items: center
+    gap: 12px
+    img
+      width: 20px
+    @media (max-width : 375px)
+      font-size: 14px
+      gap: 10px
+  // .hero__arrow
+  &__arrow
+    display: flex
+    justify-content: center
+    margin: -60px auto 0
+    padding-bottom: 90px
+    width: 73px
+    img
+      @media (max-width : 375px)
+        width: 40px
+    @media (max-width : 768px)
+      margin-top: 20px
+    @media (max-width : 375px)
+      width: 40px
+      padding-bottom: 30px
 
 
 
