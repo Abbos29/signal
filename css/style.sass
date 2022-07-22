@@ -22,6 +22,7 @@ a
 
 .container-fluid
   max-width: 1920px
+  margin: 0 auto
 
 .lock
   overflow: hidden
@@ -206,6 +207,86 @@ a
     @media (max-width : 375px)
       width: 40px
       padding-bottom: 30px
+
+
+// VIDEO
+
+.video
+  color: #151515
+
+.title__h2
+  font-size: 18px
+  line-height: 150%
+  letter-spacing: 0.5em
+  padding: 100px 0 70px
+  text-align: center
+
+.slider
+  display: flex
+  // .slider__block
+  &__block
+    width: 845px
+    margin-right: 50px
+  // .slider__img
+  &__img
+    max-width: 100%
+  // .slider__desc
+  &__desc
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 20px
+  // .slider__link
+  &__link
+    display: flex
+    align-items: center
+    gap: 25px
+    font-size: 26px
+    line-height: 150%
+    svg
+      width: 16px
+      height: 16px
+  // .slider__rutube
+  &__rutube
+    width: 50px
+    height: 50px
+
+
+.slider__arrows
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+  width: 260px
+
+.slider__arrows-prev
+  max-width: 40px
+  cursor: pointer
+  img
+    width: 40px
+
+.slider__arrows-next
+  cursor: pointer
+  img
+    width: 40px
+
+.slick-dots
+  
+  li button
+    width: 20px
+    height: 20px
+    border-radius: 50px
+    border: 1px solid #828282
+    background: #fff
+    font-size: 0
+    
+
+
+
+
+
+
+
+
 
 
 
