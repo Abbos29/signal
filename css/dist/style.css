@@ -265,10 +265,13 @@ a {
 
 .slider {
   display: flex;
+  flex-direction: column;
 }
 .slider__block {
   width: 845px;
-  margin-right: 50px;
+  margin: 0 25px;
+  position: relative;
+  z-index: 3;
 }
 .slider__img {
   max-width: 100%;
@@ -299,7 +302,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 260px;
+  width: 300px;
 }
 
 .slider__arrows-prev {
@@ -317,6 +320,18 @@ a {
   width: 40px;
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  margin: 60px auto -26px;
+  transition: 0.3s all;
+}
+.slick-dots .slick-active button {
+  transition: 0.4s ease;
+  background: #dc0000;
+  border: 1px solid #dc0000;
+}
 .slick-dots li button {
   width: 20px;
   height: 20px;

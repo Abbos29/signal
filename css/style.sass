@@ -223,10 +223,13 @@ a
 
 .slider
   display: flex
+  flex-direction: column
   // .slider__block
   &__block
     width: 845px
-    margin-right: 50px
+    margin: 0 25px
+    position: relative
+    z-index: 3
   // .slider__img
   &__img
     max-width: 100%
@@ -256,7 +259,7 @@ a
   display: flex
   justify-content: space-between
   margin: 0 auto
-  width: 260px
+  width: 300px
 
 .slider__arrows-prev
   max-width: 40px
@@ -270,7 +273,16 @@ a
     width: 40px
 
 .slick-dots
-  
+  display: flex
+  justify-content: space-between
+  width: 170px
+  margin: 60px auto -26px
+  transition: .3s all
+  .slick-active
+    button
+      transition: .4s ease
+      background: #dc0000
+      border: 1px solid #dc0000
   li button
     width: 20px
     height: 20px
@@ -278,7 +290,6 @@ a
     border: 1px solid #828282
     background: #fff
     font-size: 0
-    
 
 
 

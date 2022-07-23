@@ -334,11 +334,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .slider__block {
   width: 845px;
-  margin-right: 50px;
+  margin: 0 25px;
+  position: relative;
+  z-index: 3;
 }
 
 .slider__img {
@@ -388,7 +394,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  width: 260px;
+  width: 300px;
 }
 
 .slider__arrows-prev {
@@ -406,6 +412,26 @@ a {
 
 .slider__arrows-next img {
   width: 40px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+  margin: 60px auto -26px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.slick-dots .slick-active button {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  background: #dc0000;
+  border: 1px solid #dc0000;
 }
 
 .slick-dots li button {
