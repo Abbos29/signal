@@ -863,9 +863,15 @@ a {
           box-shadow: 5px 5px 20px 0px #00000075;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .about__block {
     padding: 70px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .about__block {
+    padding: 60px 0;
   }
 }
 
@@ -924,5 +930,32 @@ a {
   .about__numtext {
     font-size: 16px;
   }
+}
+
+.partner__wrapper {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.partner__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner__img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

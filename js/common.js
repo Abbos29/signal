@@ -45,5 +45,33 @@ $('.slider').slick({
 });
 
 
+$('.partner__wrapper').slick({
+  centerMode: true,
+  dots: false,
+  arrows: false,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '20px',
+      }
+    }
+  ]
+})
 
-// SWIPER
+
