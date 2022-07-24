@@ -247,6 +247,7 @@ a
   // .slider__img
   &__img
     img
+      box-shadow: 3px 3px 20px 0px #00000075
       max-width: 100%
       transition: .3s ease
       &:hover
@@ -439,7 +440,100 @@ a
         line-height: 14px
 
 
+// ABOUT
 
+.about
+  background: #F3F3F3
+  padding: 70px 0
+  @media (max-width : 768px)
+    padding: 55px 0
+  @media (max-width : 375px)
+    padding: 40px 0
+  // .about__top
+  &__top
+    display: flex
+    flex-direction: column
+    .title__h2
+      color: #868686
+      @media (max-width : 768px)
+        padding: 0
+    @media (max-width : 768px)
+      flex-direction: column-reverse
+  // .about__wrapper
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    @media (max-width : 768px)
+      flex-direction: column
+      gap: 25px
+      padding: 25px 0
+  // .about__title
+  &__title
+    max-width: 700px
+    font-weight: 600
+    font-size: 48px
+    line-height: 150%
+    @media (max-width : 992px)
+      font-size: 38px
+    @media (max-width : 375px)
+      font-size: 25px
+  // .about__text
+  &__text
+    max-width: 515px
+    font-size: 18px
+    line-height: 170%
+    @media (max-width : 992px)
+      font-size: 16px
+    @media (max-width : 375px)
+      font-size: 12px
+  // .about__stats
+  &__stats
+    display: flex
+    justify-content: space-between
+    gap: 50px
+    @media (max-width : 992px)
+      gap: 35px
+    @media (max-width : 768px)
+      flex-direction: column
+      align-items: center
+  // .about__block
+  &__block
+    max-width: 100%
+    width: 394px
+    text-align: center
+    padding: 100px 0
+    background: #fff
+    border-radius: 30px
+    box-shadow: 5px 5px 20px 0px #00000075
+    @media (max-width : 992px)
+      padding: 70px 0
+    @media (max-width : 768px)
+      padding: 50px 0
+    @media (max-width : 375px)
+      padding: 40px 0
+  // .about__num
+  &__num
+    font-weight: 600
+    font-size: 70px
+    line-height: 110%
+    color: #dc0000
+    @media (max-width : 992px)
+      font-size: 60px
+    @media (max-width : 375px)
+      font-size: 50px
+  // .about__numtext
+  &__numtext
+    margin: 0 auto
+    max-width: 313px
+    font-size: 20px
+    line-height: 150%
+    color: #161616
+    @media (max-width : 992px)
+      font-size: 18px
+    @media (max-width : 768px)
+      max-width: 164px
+    @media (max-width : 375px)
+      font-size: 16px
 
 
 
