@@ -725,3 +725,148 @@ a {
 .partner__img {
   max-width: 100%;
 }
+
+.contact {
+  color: #F2F2F2;
+  background: #151515;
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .contact__wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .contact__wrapper {
+    padding: 0;
+  }
+}
+.contact__map {
+  max-width: 550px;
+}
+@media (max-width: 768px) {
+  .contact__map {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.contact__map iframe {
+  max-width: 550px;
+  height: 500px;
+}
+@media (max-width: 1200px) {
+  .contact__map iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .contact__map iframe {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .contact__map iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .contact__map iframe {
+    height: 300px;
+  }
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 175px;
+}
+@media (max-width: 1200px) {
+  .contact__form {
+    margin: 0 25px;
+  }
+}
+@media (max-width: 768px) {
+  .contact__form {
+    margin: 0;
+  }
+}
+.contact__info {
+  max-width: 230px;
+}
+.contact__label {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  margin-bottom: 70px;
+}
+@media (max-width: 992px) {
+  .contact__label {
+    margin-bottom: 40px;
+  }
+}
+.contact__label input {
+  font-size: 14px;
+  line-height: 150%;
+  padding: 20px 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+}
+.contact__label::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 203px;
+  height: 1px;
+  background: #2d2d2d;
+}
+@media (max-width: 768px) {
+  .contact__label::after {
+    width: 100%;
+  }
+}
+.contact__button {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 36px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #DC0000;
+  box-shadow: 8px 8px 20px 0px #00000075;
+  transition: all 0.3s;
+}
+.contact__button:hover {
+  background: #d20005;
+  box-shadow: 2px 2px 20px 0px #00000075;
+}
+.contact__block {
+  margin-bottom: 45px;
+}
+.contact__pretitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+.contact__text {
+  font-size: 14px;
+  line-height: 150%;
+  color: #b9b9b9;
+}
