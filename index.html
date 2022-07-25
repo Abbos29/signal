@@ -234,17 +234,22 @@
       <div class="contact__wrapper">
         <div class="contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48151.11460417828!2d69.3558741!3d41.037404099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae412648862c25%3A0xb31a3e0339f798c8!2z0KLQvtC50YLQtdC_0LA!5e0!3m2!1sru!2s!4v1658670206120!5m2!1sru!2s" width="600" height="542" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-        <form class="contact__form" id="form" action="#">
-          <label class="contact__label" for="name">Имя <br>
-            <input type="text" name="first-name" required placeholder="Введите ваше имя" />
+        <form class="contact__form" id="form" action="send.php" method="POST">
+
+          <label class="contact__label" for="">Имя <br>
+            <input type="text" name="name" required placeholder="Введите ваше имя" />
           </label>
-          <label class="contact__label" for="name">Телефон <br>
+
+          <label class="contact__label" for="">Телефон <br>
             <input type="number" name="number" required placeholder="+998 (__) ___ - __ - __" />
           </label>
-          <label class="contact__label" for="name">Сообщение <br>
+
+          <label class="contact__label" for="">Сообщение <br>
             <input type="text" name="text" required placeholder="Введите текст сообщения" />
           </label>
+
           <button class="contact__button" type="submit" form="form">ОТПРАВИТЬ<img src="images/contact/arrow.svg" alt="arrow"></button>
+          
         </form>
 
         <div class="contact__info">
@@ -274,7 +279,12 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 	<script src="js/common.js"></script>
+  
 
 </body>
+
+
+
+
 
 </html>
