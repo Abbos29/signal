@@ -1,5 +1,6 @@
 "use strict";
 
+AOS.init();
 var navToggle = document.querySelector(".burger__menu");
 var mainMenu = document.querySelector(".nav");
 var tBody = document.querySelector("body");

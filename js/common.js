@@ -1,3 +1,6 @@
+
+AOS.init();
+
 const navToggle = document.querySelector(".burger__menu");
 const mainMenu = document.querySelector(".nav");
 const tBody = document.querySelector("body");

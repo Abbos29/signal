@@ -4,6 +4,9 @@ $pink: #f41240
 
 // USER STYLES
 
+html
+  scroll-behavior: smooth
+
 body
   font-family: 'Montserrat', sans-serif
   font-weight: 400
@@ -247,7 +250,7 @@ a
   // .slider__img
   &__img
     img
-      box-shadow:  16px 16px 35px #afafaf, -16px -16px 35px #ffffff
+      box-shadow:  5px 5px 10px #afafaf 
       border-radius: 15px
       max-width: 100%
       transition: .3s ease
@@ -445,7 +448,7 @@ a
 
 .about
   background: #F3F3F3
-  padding: 70px 0
+  padding: 90px 0
   @media (max-width : 768px)
     padding: 55px 0
   @media (max-width : 375px)
@@ -571,6 +574,7 @@ a
     @media (max-width : 768px)
       flex-direction: column
       gap: 30px
+      padding-bottom: 50px
     @media (max-width : 375px)
       padding: 0
   // .contact__map
@@ -671,8 +675,49 @@ a
     color: #b9b9b9
 
 
+// FOOTER
 
-
+.footer
+  background: #151515
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 75px 0 70px
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 2px
+      background: #2d2d2d
+      top: 0
+      left: 0
+    @media (max-width : 768px)
+      flex-direction: column
+      align-items: center
+      gap: 40px
+  &__rutube
+    transition: .4s all
+    &:hover
+      svg g path
+        transition: .4s all
+        fill: $pink
+  .nav
+    @media (max-width : 768px)
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 40px
+    .nav__link
+      a
+        color: #F2F2F2
+        transition: all .3s
+        font-size: 14px
+        font-weight: 400
+        letter-spacing: 0.1em
+        &:hover
+          color: $pink
 
 
 

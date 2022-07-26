@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -312,7 +316,7 @@ a {
   }
 }
 .slider__img img {
-  box-shadow: 16px 16px 35px #afafaf, -16px -16px 35px #ffffff;
+  box-shadow: 5px 5px 10px #afafaf;
   border-radius: 15px;
   max-width: 100%;
   transition: 0.3s ease;
@@ -557,7 +561,7 @@ a {
 
 .about {
   background: #F3F3F3;
-  padding: 70px 0;
+  padding: 90px 0;
 }
 @media (max-width: 768px) {
   .about {
@@ -740,6 +744,7 @@ a {
   .contact__wrapper {
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 375px) {
@@ -870,4 +875,56 @@ a {
   font-size: 14px;
   line-height: 150%;
   color: #b9b9b9;
+}
+
+.footer {
+  background: #151515;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0 70px;
+  position: relative;
+}
+.footer__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #2d2d2d;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.footer__rutube {
+  transition: 0.4s all;
+}
+.footer__rutube:hover svg g path {
+  transition: 0.4s all;
+  fill: #f41240;
+}
+@media (max-width: 768px) {
+  .footer .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.footer .nav .nav__link a {
+  color: #F2F2F2;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.footer .nav .nav__link a:hover {
+  color: #f41240;
 }
