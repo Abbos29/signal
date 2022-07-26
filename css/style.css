@@ -394,8 +394,9 @@ a {
 }
 
 .slider__img img {
-  -webkit-box-shadow: 3px 3px 20px 0px #00000075;
-          box-shadow: 3px 3px 20px 0px #00000075;
+  -webkit-box-shadow: 16px 16px 35px #afafaf, -16px -16px 35px #ffffff;
+          box-shadow: 16px 16px 35px #afafaf, -16px -16px 35px #ffffff;
+  border-radius: 15px;
   max-width: 100%;
   -webkit-transition: .3s ease;
   transition: .3s ease;
